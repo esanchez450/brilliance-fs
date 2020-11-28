@@ -1,0 +1,58 @@
+.contact {
+    height: 90vmax;
+    justify-content: center;
+    align-items: center;
+  
+    min-width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    max-width: 70em; 
+  }
+  
+  .contact-div {
+    margin-top: 10vh;
+    padding-left: 2em;
+  }
+  
+  .contact-info {
+    display: flex;
+    margin: 10px;
+    /* align-items: left; */
+    /* align-items: ; */
+    /* justify-content: center; */
+  }
+  
+  input {
+    display: inline-block;
+    
+    width: 10em;
+    position: relative;
+    /* top: -3em; */
+  }
+  form {
+    margin-top: 10vh;
+  }
+  
+  label {
+    display: inline-block;
+    /* width: 6em; */
+    /* margin: 1.5em; */
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+  
+  #email {
+    position: relative;
+    margin-top: 1em;
+    /* padding-left: 1em; */
+    width: 410px;
+  }
+  
+  #submit {
+    margin: 2em;
+  }
+  
+  #priority {
+    margin-top: 1em;
+  }

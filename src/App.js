@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import Solutions from './components/Solutions';
+import About from './components/About';
+import Contact from './components/Contact';
+import Blog from './components/Blog';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />         {/* exact makes sure only slash renders */}
+          <Route path="/solutions"  component={Solutions} />
+          <Route path="/about"  component={About} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path="/blog" exact component={Blog} />
+          {/* <Route path="/shop/:id" component={ItemDetail} />  id can actually be any parameter */}
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,18 @@
+.solutions {
+    min-width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    max-width: 70em; 
+}
+
+.solutions-list {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: left; */
+    margin-top: 3em;
+    padding-left: 2em;
+    text-align: left;
+    list-style-type: circle;
+}
+  
