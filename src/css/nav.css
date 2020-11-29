@@ -1,6 +1,11 @@
 .linkStyle {
     color: white;
 }
+.MenuLinkStyle {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
   
 .logoLinkStyle {
     color: white;
@@ -55,4 +60,10 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.drop-menu {
+    background-color: rgb(50, 142, 173);
+    border-radius: 5px;
+    color: white;
 }
