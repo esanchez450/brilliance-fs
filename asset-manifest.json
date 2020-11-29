@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/brilliance-fs/static/css/main.125bbf26.chunk.css",
-    "main.js": "/brilliance-fs/static/js/main.535bd8f5.chunk.js",
-    "main.js.map": "/brilliance-fs/static/js/main.535bd8f5.chunk.js.map",
-    "runtime-main.js": "/brilliance-fs/static/js/runtime-main.b67b5c3f.js",
-    "runtime-main.js.map": "/brilliance-fs/static/js/runtime-main.b67b5c3f.js.map",
-    "static/js/2.9271d079.chunk.js": "/brilliance-fs/static/js/2.9271d079.chunk.js",
-    "static/js/2.9271d079.chunk.js.map": "/brilliance-fs/static/js/2.9271d079.chunk.js.map",
-    "static/js/3.a10e002f.chunk.js": "/brilliance-fs/static/js/3.a10e002f.chunk.js",
-    "static/js/3.a10e002f.chunk.js.map": "/brilliance-fs/static/js/3.a10e002f.chunk.js.map",
+    "main.css": "/brilliance-fs/static/css/main.08a46e0a.chunk.css",
+    "main.js": "/brilliance-fs/static/js/main.b7aef9cd.chunk.js",
+    "main.js.map": "/brilliance-fs/static/js/main.b7aef9cd.chunk.js.map",
+    "runtime-main.js": "/brilliance-fs/static/js/runtime-main.3e5f9951.js",
+    "runtime-main.js.map": "/brilliance-fs/static/js/runtime-main.3e5f9951.js.map",
+    "static/js/2.2543c1c7.chunk.js": "/brilliance-fs/static/js/2.2543c1c7.chunk.js",
+    "static/js/2.2543c1c7.chunk.js.map": "/brilliance-fs/static/js/2.2543c1c7.chunk.js.map",
+    "static/js/3.51bac259.chunk.js": "/brilliance-fs/static/js/3.51bac259.chunk.js",
+    "static/js/3.51bac259.chunk.js.map": "/brilliance-fs/static/js/3.51bac259.chunk.js.map",
     "index.html": "/brilliance-fs/index.html",
-    "static/css/main.125bbf26.chunk.css.map": "/brilliance-fs/static/css/main.125bbf26.chunk.css.map",
-    "static/js/2.9271d079.chunk.js.LICENSE.txt": "/brilliance-fs/static/js/2.9271d079.chunk.js.LICENSE.txt",
+    "static/css/main.08a46e0a.chunk.css.map": "/brilliance-fs/static/css/main.08a46e0a.chunk.css.map",
+    "static/js/2.2543c1c7.chunk.js.LICENSE.txt": "/brilliance-fs/static/js/2.2543c1c7.chunk.js.LICENSE.txt",
     "static/media/logo.103b5fa1.svg": "/brilliance-fs/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b67b5c3f.js",
-    "static/js/2.9271d079.chunk.js",
-    "static/css/main.125bbf26.chunk.css",
-    "static/js/main.535bd8f5.chunk.js"
+    "static/js/runtime-main.3e5f9951.js",
+    "static/js/2.2543c1c7.chunk.js",
+    "static/css/main.08a46e0a.chunk.css",
+    "static/js/main.b7aef9cd.chunk.js"
   ]
 }
