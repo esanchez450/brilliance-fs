@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/brilliance-fs/static/css/main.833447ac.chunk.css",
-    "main.js": "/brilliance-fs/static/js/main.41f8a185.chunk.js",
-    "main.js.map": "/brilliance-fs/static/js/main.41f8a185.chunk.js.map",
+    "main.css": "/brilliance-fs/static/css/main.52b9a7b4.chunk.css",
+    "main.js": "/brilliance-fs/static/js/main.bbb47278.chunk.js",
+    "main.js.map": "/brilliance-fs/static/js/main.bbb47278.chunk.js.map",
     "runtime-main.js": "/brilliance-fs/static/js/runtime-main.8542ee2b.js",
     "runtime-main.js.map": "/brilliance-fs/static/js/runtime-main.8542ee2b.js.map",
     "static/js/2.1e90ec8a.chunk.js": "/brilliance-fs/static/js/2.1e90ec8a.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.30e3796d.chunk.js": "/brilliance-fs/static/js/3.30e3796d.chunk.js",
     "static/js/3.30e3796d.chunk.js.map": "/brilliance-fs/static/js/3.30e3796d.chunk.js.map",
     "index.html": "/brilliance-fs/index.html",
-    "static/css/main.833447ac.chunk.css.map": "/brilliance-fs/static/css/main.833447ac.chunk.css.map",
+    "static/css/main.52b9a7b4.chunk.css.map": "/brilliance-fs/static/css/main.52b9a7b4.chunk.css.map",
     "static/js/2.1e90ec8a.chunk.js.LICENSE.txt": "/brilliance-fs/static/js/2.1e90ec8a.chunk.js.LICENSE.txt",
     "static/media/logo.103b5fa1.svg": "/brilliance-fs/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8542ee2b.js",
     "static/js/2.1e90ec8a.chunk.js",
-    "static/css/main.833447ac.chunk.css",
-    "static/js/main.41f8a185.chunk.js"
+    "static/css/main.52b9a7b4.chunk.css",
+    "static/js/main.bbb47278.chunk.js"
   ]
 }
