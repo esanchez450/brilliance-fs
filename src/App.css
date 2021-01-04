@@ -1,20 +1,17 @@
-#root {
+/* #root {
   background-color: rgb(235, 244, 255);
+} */
+
+
+* {
+  /* background-color: rgb(235, 244, 255); */
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   text-align: center;
   align-content: center;
-  background-color: rgb(235, 244, 255);
-  height: 100vh;
-}
-
-* {
-  margin: 0;
-  /* padding: 0; */
-  /* box-sizing: border-box; */
-}
-
-.App {
   text-align: center;
+  padding-bottom: -2.5rem; 
 }
