@@ -1,12 +1,25 @@
-.linkStyle {
+.header {
+    min-height: 5vmin;
+    display:flex;
+    float: none;
+    background-color: rgba(49, 113, 134);
     color: white;
+    /* min-width: 100%; */
+    width: 95%;
+    margin:0 auto;
 }
-.MenuLinkStyle {
-    color: black;
-    list-style: none;
-    text-decoration: none;
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; 
+    width: 10em;
+    max-width: 100em;  */
 }
-  
+
 .logoLinkStyle {
     color: white;
     text-decoration: none;
@@ -15,28 +28,36 @@
 .nav-links {
     width: 55%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
+
+    /*
+    border-radius: 6px;
+    border:none;
+    padding: 15px 250px;
+    box-shadow: 5px 5px 5px #c3c7ff, 10px 10px 10px #000000;
+    box-shadow: 4px 6px 15px #c3c7ff, 5px 6px 50px #000000;
+    box-shadow: 4px 6px 15px #000000, 8px 10px 20px #6d6d6d; 
+    */
 }
 
-.header {
-    min-height: 5vmin;
-    background-color: rgba(49, 113, 134);
+.linkStyle {
     color: white;
+    /* 
+    border-radius: 6px;
+    border:none;
+    padding: 10px;
+    box-shadow: 2px 4px 5px #c3c7ff, 4px 6px 10px #000000; 
+    */
 }
 
-.header-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 100vh;
-    margin-left: auto;
-    margin-right: auto; 
-    width: 10em;
-    max-width: 100em; 
+.MenuLinkStyle {
+    color: black;
+    list-style: none;
+    text-decoration: none;
 }
-
+  
 .App-logo {
     height: 8vmin;
     pointer-events: all;
@@ -47,6 +68,14 @@
         animation: App-logo-spin infinite 20s linear;
     }
 }
+
+/* 
+@media only screen and (max-width: 360px) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+} 
+*/
 
 @keyframes slidein {
     from { transform: scaleX(0); }

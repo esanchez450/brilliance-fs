@@ -1,17 +1,30 @@
 .contact {
-    height: 90vmax;
-    justify-content: center;
-    align-items: center;
-  
     min-width: 70vh;
     margin-left: auto;
     margin-right: auto;
-    width: 10em;
-    max-width: 70em; 
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 70em;
+    height: 90vh;
+  }
+
+  .contact-title {
+    padding-top: 2em; 
+    padding-left: 6em;
+    text-align: center;
   }
   
+  .contact-container {
+    box-shadow: 2px 4px 10px black;
+    width: 100%;
+    height: 500px;
+    margin-top: 3em;
+    padding: 2em;
+    text-align: left;
+  }
+
   .contact-div {
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     padding-left: 2em;
   }
   
@@ -55,4 +68,14 @@
   
   #priority {
     margin-top: 1em;
+  }
+
+  .PhoneIcon { 
+    padding-right: 5px;
+    font-size: large;
+  }
+
+  .EmailIcon { 
+    padding-right: 5px;
+    font-size: large;
   }
