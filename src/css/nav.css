@@ -1,12 +1,13 @@
 .header {
-    min-height: 5vmin;
+    /* min-height: 7vmin; */
+    height: 7vmin;
     display:flex;
     float: none;
     background-color: rgba(49, 113, 134);
     color: white;
     /* min-width: 100%; */
-    width: 95%;
-    margin:0 auto;
+    /* width: 95%; */
+    margin: 0 auto;
 }
 
 .header-nav {
@@ -31,6 +32,7 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    font-size: 120%;
 
     /*
     border-radius: 6px;
@@ -44,12 +46,31 @@
 
 .linkStyle {
     color: white;
+    text-decoration: none;
     /* 
     border-radius: 6px;
     border:none;
     padding: 10px;
     box-shadow: 2px 4px 5px #c3c7ff, 4px 6px 10px #000000; 
     */
+}
+
+/* .linkStyle:link {
+    color: red;
+} */
+
+/* .linkStyle:visited {
+    color: green;
+} */
+
+.linkStyle:hover {
+    color: rgba(255, 255, 255, 0.664);
+    text-decoration: underline;
+}
+
+.linkStyle:active {
+    color: rgb(126, 126, 126);
+    text-decoration: underline;
 }
 
 .MenuLinkStyle {

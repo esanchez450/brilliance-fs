@@ -1,19 +1,5 @@
 .home {
-    /* background-color: #274965; */
-    /* color: rgb(255, 247, 142); */
-
-    /* min-width: 70vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    width: 70em; */
-
-    /* max-width: 200em;  */
-    /* height: 90vh; */
-}
-
-.home {
+    /* background-color: yellow; */
     min-width: 70vh;
     margin-left: auto;
     margin-right: auto;
@@ -24,12 +10,13 @@
 }
 
 .home-title {
+    /* background-color: white; */
     padding-top: 2em; 
-    /* padding-left: 6em; */
     text-align: center;
 }
 
 .home-container {
+    background-color: white;
     box-shadow: 2px 4px 10px black;
     /* margin-left: 0 auto;
     margin-right: 0 auto; */

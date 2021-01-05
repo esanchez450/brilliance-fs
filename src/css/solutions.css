@@ -26,6 +26,7 @@
 }
 
 .solutions-container-1 {
+    background-color: white;
     box-shadow: 2px 4px 10px black;
     width: 95%;
     height: 500px;
@@ -35,6 +36,7 @@
 }
 
 .solutions-container-2 {
+    background-color: white;
     box-shadow: 2px 4px 10px black;
     width: 95%;
     height: 500px;

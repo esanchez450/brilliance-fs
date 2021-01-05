@@ -4,18 +4,22 @@ body {
    padding:0;
    height:100%;
 }
+
 #container {
    min-height:100%;
    position:relative;
 }
+
 #header {
    background:#ff0;
    padding:10px;
 }
+
 #body {
    padding:10px;
    padding-bottom:60px;   /* Height of the footer */
 }
+
 #footer {
    position:absolute;
    bottom:0;   /* Always make footer in bottom at any screen */

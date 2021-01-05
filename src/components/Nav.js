@@ -32,18 +32,20 @@ const Nav = () => {
                 <Link className='linkStyle' to='/blog'>
                     <li> Blog </li>
                 </Link>
-
-                <Link className='linkStyle' >
-                    {
-                    /** 
-                     * Need menu to render for mobile nav
-                     * on conditional rendering
-                     */ 
-                    }
-                    <MobileMenu />
-                </Link>
                 
+                {
+                // <Link className='linkStyle' >
+                //     {
+                //     /** 
+                //      * Need menu to render for mobile nav
+                //      * on conditional rendering
+                //      */ 
+                //     }
+                //     <MobileMenu />
+                // </Link>
+                }
             </ul>
+            
         </nav>
     </div>
   );

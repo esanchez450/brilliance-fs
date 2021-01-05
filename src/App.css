@@ -9,9 +9,14 @@
   padding: 0;
 }
 
+html,
+body {
+  background-color: rgb(235, 244, 255);
+}
+
 .App {
   text-align: center;
   align-content: center;
   text-align: center;
-  padding-bottom: -2.5rem; 
+  padding-bottom: -25rem; 
 }
