@@ -35,7 +35,7 @@ const Contact = () => {
 
                     <label for="priority" id='priority'> Priority : </label>
                     <select>
-                        <optgroup label='a type of shade'> 
+                        <optgroup label='select'> 
                             <option selected> high </option>
                             <option> medium </option>
                             <option> low </option>

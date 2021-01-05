@@ -12,12 +12,9 @@ const Nav = () => {
     <div className="header">
         <nav className="header-nav">
 
-
             <Link className='logoLinkStyle' to='/'>
                 <img src={logo} className="App-logo" alt="Brilliance" />
             </Link>
-
-
 
             <ul className='nav-links'>
                 <Link className='linkStyle' to='/solutions'>

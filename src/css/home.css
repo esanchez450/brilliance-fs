@@ -1,14 +1,16 @@
 .home {
     /* background-color: #274965; */
     /* color: rgb(255, 247, 142); */
-    min-width: 70vh;
+
+    /* min-width: 70vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 0px;
-    width: 70em;
+    width: 70em; */
+
     /* max-width: 200em;  */
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 .home {
@@ -23,13 +25,15 @@
 
 .home-title {
     padding-top: 2em; 
-    padding-left: 6em;
+    /* padding-left: 6em; */
     text-align: center;
 }
 
 .home-container {
     box-shadow: 2px 4px 10px black;
-    width: 100%;
+    /* margin-left: 0 auto;
+    margin-right: 0 auto; */
+    width: 95%;
     height: 500px;
     margin-top: 3em;
     padding: 2em;

@@ -10,13 +10,12 @@
 
 .blog-title {
     padding-top: 2em; 
-    padding-left: 6em;
     text-align: center;
 }
   
 .blog-container {
     box-shadow: 2px 4px 10px black;
-    width: 100%;
+    width: 95%;
     height: 500px;
     margin-top: 3em;
     padding: 2em;
