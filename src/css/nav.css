@@ -24,16 +24,25 @@
     padding: 0px 160px 0px 160px;
 }
 
+ul.social-logo {
+    list-style: none;
+}
+
+ul.social-logo li {
+    display: inline;
+    position: relative;
+    padding-right: 11px;
+}
+
 .header-topbar .left {
-    width: 600px;
-    height:30px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color:#14287b
+    justify-content: center;
+    align-items: center;
+    background-color:#14287b;
 }
 
 .header-topbar .right .header-button {
+    font-weight: bold;
     display: flex;
     justify-content: center;
     width: 170px;
@@ -45,29 +54,31 @@
 
 .header-nav {
     height: 97px;
-    background-color: #287ff9;
+    /* background-color: #287ff9; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-width: 100%;
+    /* min-width: 100%; */
     /* margin-left: auto;
     margin-right: auto; 
     width: 10em;
     max-width: 100em;  */
+    padding: 0px 80px 0px 63px;
 }
 
 .logoLinkStyle {
-    color: white;
+    color: #14287b;
     text-decoration: none;
 }
 
 .nav-links {
-    width: 55%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    font-size: 120%;
+    font-size: 100%;
+    padding: 0px 50px 0px 20px;
 
     /*
     border-radius: 6px;
@@ -80,7 +91,7 @@
 }
 
 .linkStyle {
-    color: white;
+    color: #14287b;
     text-decoration: none;
     /* 
     border-radius: 6px;
@@ -119,6 +130,10 @@
     text-decoration: underline;
 }
 
+.header-nav .contact-info {
+    
+}
+
 .MenuLinkStyle {
     color: black;
     list-style: none;
@@ -128,6 +143,8 @@
 .App-logo {
     height: 8vmin;
     pointer-events: all;
+    /* background-color: #14287b;
+    border-radius: 100%; */
 }
 
 @media (prefers-reduced-motion: no-preference) {

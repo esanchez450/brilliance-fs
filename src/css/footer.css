@@ -1,5 +1,5 @@
 .footer {
-    background-color: rgba(49, 113, 134);
+    background-color: #14287b;
     color: white;
     /* position: absolute; */
     bottom:0;   /* Always make footer in bottom at any screen */
@@ -13,4 +13,5 @@
     /* margin-left: 24em; */
     /* margin-right: 24em; */
     margin: 0 auto;
+    margin-top: 2rem;
 }

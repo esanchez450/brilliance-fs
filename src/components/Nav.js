@@ -18,22 +18,31 @@ const Nav = () => {
             {/* need header top-bar 46px*/}
         <div className='header-topbar'>
             <div className='left'>
-                {/* <button>
-                    <mdiGooglePlus></mdiGooglePlus>
-                </button> */}
-                    <FacebookIcon></FacebookIcon>
-                <i class="fab fa-facebook-f"></i>
-                <TwitterIcon></TwitterIcon>
-                <InstagramIcon></InstagramIcon>
-                {/* <button> */}
-                    <Icon path={mdiGooglePlus}
-                        title="User Profile"
-                        size={1}
-                        horizontal
-                        vertical
-                        rotate={180}
-                        color="#B9BFD7"/>
-                {/* </button> */}
+                <ul className='social-logo'>
+                    <li>
+                        <FacebookIcon></FacebookIcon>
+                    </li>
+
+                    <li>
+                        <TwitterIcon></TwitterIcon>
+                    </li>
+
+                    <li>
+                        <InstagramIcon></InstagramIcon>
+                    </li>
+
+                    <li>
+                        {/* <button> */}
+                            <Icon path={mdiGooglePlus}
+                                title="User Profile"
+                                size={1}
+                                horizontal
+                                vertical
+                                rotate={180}
+                                color="#B9BFD7"/>
+                        {/* </button> */}
+                    </li>
+                </ul>
             </div>
 
             <div className='right'>
@@ -77,6 +86,10 @@ const Nav = () => {
                 // </Link>
                 }
             </ul>
+
+            <div className='contact-info'>
+                646-555-5555
+            </div>
             
         </nav>
     </div>

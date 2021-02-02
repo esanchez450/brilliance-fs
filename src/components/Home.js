@@ -6,7 +6,7 @@ const Home = () => {
     <div className='home'>
 
       <div className='home-title'>
-        <h1>Home Page</h1>
+        <h1>Brilliance</h1>
       </div>
 
       <div className='Branding'>
@@ -17,7 +17,7 @@ const Home = () => {
       
       <div className='home-container'>
         <p>
-            Here at Brilliance-FS, we offer the best facility solutions.
+            Here at Brilliance-FS, we offer the best cleaning facility solutions.
         </p>
         <br></br>
         <p>
