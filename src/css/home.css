@@ -1,27 +1,35 @@
 .home {
     /* background-color: yellow; */
-    min-width: 70vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    width: 70em;
+    /* min-width: 70vh; */
+    /* width: 70em; */
     height: 90vh;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 0px; */
 }
 
 .home-title {
     /* background-color: white; */
+    /* min-width: 70vh;
+    width: 70em; */
     padding-top: 2em; 
     text-align: center;
+    height: 560px;
+    background-color: aliceblue;
 }
 
 .Branding {
+    /* min-width: 70vh; */
+    width: 70em; 
     font-family: 'Poppins';
     font-size: 36px;
     text-align: left;
 }
 
 .home-container {
+    /* min-width: 70vh;
+    width: 70em; */
     background-color: white;
     box-shadow: 2px 4px 10px black;
     /* margin-left: 0 auto;

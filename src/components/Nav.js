@@ -4,14 +4,46 @@ import {Link} from 'react-router-dom'
 import logo from '../logo.svg';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Button, Menu, MenuItem, Popover } from '@material-ui/core';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import Icon from '@mdi/react'
+import { mdiGooglePlus } from '@mdi/js';
 
 let intViewportWidth = window.innerWidth;
 
 const Nav = () => {
   return (
     <div className="header">
-        <nav className="header-nav">
+            {/* need header top-bar 46px*/}
+        <div className='header-topbar'>
+            <div className='left'>
+                {/* <button>
+                    <mdiGooglePlus></mdiGooglePlus>
+                </button> */}
+                    <FacebookIcon></FacebookIcon>
+                <i class="fab fa-facebook-f"></i>
+                <TwitterIcon></TwitterIcon>
+                <InstagramIcon></InstagramIcon>
+                {/* <button> */}
+                    <Icon path={mdiGooglePlus}
+                        title="User Profile"
+                        size={1}
+                        horizontal
+                        vertical
+                        rotate={180}
+                        color="#B9BFD7"/>
+                {/* </button> */}
+            </div>
 
+            <div className='right'>
+                <a className='header-button'>Get A Quote</a>
+            </div>
+        </div>
+
+        
+        <nav className="header-nav">
+            {/* put header menu below top-bar 97px*/}
             <Link className='logoLinkStyle' to='/'>
                 <img src={logo} className="App-logo" alt="Brilliance" />
             </Link>
