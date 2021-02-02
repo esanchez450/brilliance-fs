@@ -64,8 +64,19 @@
 } */
 
 .linkStyle:hover {
-    color: rgba(255, 255, 255, 0.664);
-    text-decoration: underline;
+    /* color: rgba(255, 255, 255, 0.664); */
+    background-color: rgba(97, 215, 255, 0.350);
+    /* text-decoration: underline; */
+    border-radius: 5px;
+    border:none;
+    /* position: static; */
+    margin: -1% -5%;
+    padding: 1%  5%;
+    /* z-index: 1; */
+    /* box-shadow: 2px 4px 5px #c3c7ff, 4px 6px 10px #000000;  */
+    /* box-shadow: 2px 4px 5px #000000; 
+    box-shadow: 2px 4px #000000; 
+    box-shadow: 2px #000000;      */
 }
 
 .linkStyle:active {

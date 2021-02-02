@@ -32,7 +32,7 @@ const Nav = () => {
                 <Link className='linkStyle' to='/blog'>
                     <li> Blog </li>
                 </Link>
-                
+
                 {
                 // <Link className='linkStyle' >
                 //     {
@@ -41,7 +41,7 @@ const Nav = () => {
                 //      * on conditional rendering
                 //      */ 
                 //     }
-                //     <MobileMenu />
+                    // <MobileMenu />
                 // </Link>
                 }
             </ul>

@@ -15,6 +15,12 @@
     text-align: center;
 }
 
+.Branding {
+    font-family: 'Poppins';
+    font-size: 36px;
+    text-align: left;
+}
+
 .home-container {
     background-color: white;
     box-shadow: 2px 4px 10px black;

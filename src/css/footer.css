@@ -4,13 +4,13 @@
     /* position: absolute; */
     bottom:0;   /* Always make footer in bottom at any screen */
     /* width:95%; */
-    height: 5rem;   /* Height of the footer */
+    height: 3rem;   
+    /* Height of the footer */
     float: initial;
     /* box-shadow: 2,3,4,5 white; */
-    /* text-align: center; */
-    padding-top: 25px;
+    text-align: center;
+    padding-top: 2rem;
     /* margin-left: 24em; */
     /* margin-right: 24em; */
-
     margin: 0 auto;
 }
