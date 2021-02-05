@@ -16,7 +16,8 @@
     padding-top: 2em;
     text-align: center;
     height: 560px;
-    background-color: aliceblue;
+    /* height: 70vh; */
+    background-color: rgba(240, 248, 255, 0.801);
 }
 
 .Branding {
@@ -37,6 +38,7 @@
     margin-right: 0 auto; */
     /* width: 95%; */
     height: 500px;
+    /* height: 100vh; */
     margin-top: 3em;
     margin: 3em ;
 

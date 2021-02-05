@@ -12,6 +12,8 @@
     /* margin: 0 auto; */
 }
 
+/************    top nav bar    **************/
+
 .header-topbar {
     display: flex; 
     justify-content: space-between;
@@ -52,18 +54,20 @@ ul.social-logo li {
     color: black;
 }
 
+/************    header nav bar    **************/
+
 .header-nav {
     height: 97px;
     /* background-color: #287ff9; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /* min-width: 100%; */
     /* margin-left: auto;
     margin-right: auto; 
     width: 10em;
     max-width: 100em;  */
-    padding: 0px 80px 0px 63px;
+    padding: 0px 160px 0px 160px;
 }
 
 .logoLinkStyle {
@@ -72,7 +76,7 @@ ul.social-logo li {
 }
 
 .nav-links {
-    width: 40%;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,7 +135,10 @@ ul.social-logo li {
 }
 
 .header-nav .contact-info {
-    
+    /* background-color: green; */
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    margin: 0;
 }
 
 .MenuLinkStyle {
@@ -141,10 +148,11 @@ ul.social-logo li {
 }
   
 .App-logo {
-    height: 8vmin;
+    height: 80px;
     pointer-events: all;
-    /* background-color: #14287b;
-    border-radius: 100%; */
+    /* background-color: #14287b; */
+    /*border-radius: 100%; */
+    /* margin: 0 auto; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
