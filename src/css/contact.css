@@ -14,6 +14,8 @@
   }
   
   .contact-container {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     box-shadow: 2px 4px 10px black;
     width: 95%;
@@ -21,6 +23,7 @@
     margin-top: 3em;
     padding: 2em;
     text-align: left;
+
   }
 
   .contact-div {
@@ -38,7 +41,6 @@
   
   input {
     display: inline-block;
-    
     width: 10em;
     position: relative;
     
@@ -79,3 +81,56 @@
     padding-right: 5px;
     font-size: large;
   }
+
+
+/* contact page css */
+
+.contact-body {
+  background: #0B486B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+.contact-grid {
+  
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  height: 560px;
+  color:white;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: 'Anton', sans-serif;
+  color:white
+}
+
+.contact-body p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.contact-body hr {
+  border-top: 5px dotted white;
+  width: 70%;
+  margin: auto;
+}
+
+.contact-body i {
+  font-size: 50px;
+  padding-right: 1rem;
+  color: white;
+}
+
+
+/* contact page css */
+
+
+

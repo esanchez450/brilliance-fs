@@ -2,6 +2,9 @@ import React from 'react';
 import '../css/contact.css';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
+import { Grid, Cell, ListItemContent } from 'react-mdl';
+
+
 
 const Contact = () => {
     return (
