@@ -3,6 +3,8 @@ import '../css/contact.css';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
 
+
+
 const Contact = () => {
     return (
       <div className="contact">
