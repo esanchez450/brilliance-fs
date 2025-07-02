@@ -20,20 +20,21 @@ const Contact = () => {
             </div>
 
             <div className="form-div">
-                <form action='./contact'>
-                    <label for="fname"> First name: </label>
-                    <input type="text" id="fname" name="fname"></input>
 
-                    <label for="lname"> Last name: </label>
-                    <input type="text" id="lname" name="lname"></input>
+                <form action='./contact'>
+                    <label htmlFor="fname"> First name: </label>
+                    <input type="text" id="fname" name="fname" />
+
+                    <label htmlFor="lname"> Last name: </label>
+                    <input type="text" id="lname" name="lname" />
 
                     <br></br>
                   
-                    <label for="email" id="email-label" placeholder="Enter your email"> Email: </label>
-                    <input type="text" id="email" name="email"></input>
+                    <label htmlFor="email" id="email-label" placeholder="Enter your email"> Email: </label>
+                    <input type="text" id="email" name="email" />
                     <br></br>
 
-                    <label for="priority" id='priority'> Priority : </label>
+                    <label htmlFor="priority" id='priority'> Priority : </label>
                     <select>
                         <optgroup label='a type of shade'> 
                             <option selected> high </option>
@@ -44,7 +45,7 @@ const Contact = () => {
 
                     <br></br>
 
-                    <input type="submit" id="submit" value="Submit"></input>
+                    <input type="submit" id="submit" value="Submit" />
                 </form>
             </div>
           </ul>
