@@ -1,12 +1,12 @@
 import React from 'react';
 import '../css/home.css';
 import { Link } from 'react-router-dom';
-import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
-import GroupIcon from '@material-ui/icons/Group';
-import AccessTimeIcon from '@material-ui/icons/AccessTime';
-import BuildIcon from '@material-ui/icons/Build';
-import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
+import GroupIcon from '@mui/icons-material/Group';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import BuildIcon from '@mui/icons-material/Build';
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const previewServices = [
   {
@@ -162,7 +162,7 @@ const Home = () => {
               <ul className="why-list">
                 {whyPoints.map((p) => (
                   <li key={p}>
-                    <CheckCircleOutlineIcon className="check-icon" />
+                    <TaskAltIcon className="check-icon" />
                     <span>{p}</span>
                   </li>
                 ))}

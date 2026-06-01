@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/blog.css';
 import { Link } from 'react-router-dom';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const posts = [
   {

@@ -1,17 +1,17 @@
 import React from 'react';
 import '../css/solutions.css';
 import { Link } from 'react-router-dom';
-import ViewModuleIcon from '@material-ui/icons/ViewModule';
-import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
-import BlurOnIcon from '@material-ui/icons/BlurOn';
-import AutorenewIcon from '@material-ui/icons/Autorenew';
-import BrightnessMediumIcon from '@material-ui/icons/BrightnessMedium';
-import GridOnIcon from '@material-ui/icons/GridOn';
-import InvertColorsIcon from '@material-ui/icons/InvertColors';
-import RefreshIcon from '@material-ui/icons/Refresh';
-import HomeIcon from '@material-ui/icons/Home';
-import WeekendIcon from '@material-ui/icons/Weekend';
-import CheckIcon from '@material-ui/icons/Check';
+import ViewModuleIcon from '@mui/icons-material/ViewModule';
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
+import BlurOnIcon from '@mui/icons-material/BlurOn';
+import AutorenewIcon from '@mui/icons-material/Autorenew';
+import BrightnessMediumIcon from '@mui/icons-material/BrightnessMedium';
+import GridOnIcon from '@mui/icons-material/GridOn';
+import InvertColorsIcon from '@mui/icons-material/InvertColors';
+import RefreshIcon from '@mui/icons-material/Refresh';
+import HomeIcon from '@mui/icons-material/Home';
+import WeekendIcon from '@mui/icons-material/Weekend';
+import CheckIcon from '@mui/icons-material/Check';
 
 const services = [
   {

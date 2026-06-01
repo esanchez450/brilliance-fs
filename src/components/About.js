@@ -1,10 +1,10 @@
 import React from 'react';
 import '../css/about.css';
 import { Link } from 'react-router-dom';
-import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
-import EcoIcon from '@material-ui/icons/Eco';
-import PeopleIcon from '@material-ui/icons/People';
-import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
+import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
+import EnergySavingsLeafIcon from '@mui/icons-material/EnergySavingsLeaf';
+import PeopleIcon from '@mui/icons-material/People';
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 const values = [
   {
@@ -13,7 +13,7 @@ const values = [
     desc: 'We never cut corners. Every job is completed to the highest standard, backed by our satisfaction guarantee and a team that genuinely cares.',
   },
   {
-    icon: <EcoIcon />,
+    icon: <EnergySavingsLeafIcon />,
     title: 'Eco-Conscious',
     desc: 'We use environmentally responsible, commercial-grade products that are effective against pathogens while being safe for people, pets, and the planet.',
   },
@@ -134,7 +134,7 @@ const About = () => {
             <ul className="commitment-list">
               {commitments.map((c) => (
                 <li key={c}>
-                  <CheckCircleOutlineIcon className="check-icon" />
+                  <TaskAltIcon className="check-icon" />
                   <span>{c}</span>
                 </li>
               ))}
