@@ -9,36 +9,26 @@ import Blog from './components/Blog';
 import Footer from './components/Footer';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route
+  Routes,
+  Route,
 } from 'react-router-dom';
-
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : ''}>
       <div className="App">
         <Nav />
-        <Switch>
-          <Route path="/" exact component={Home} />         {/* exact makes sure only slash renders */}
-          <Route path="/brilliance-fs" exact component={Home} />
-          <Route path="/solutions"  component={Solutions} />
-          <Route path="/about"  component={About} />
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/blog" exact component={Blog} />
-          {/* <Route path="/shop/:id" component={ItemDetail} />  id can actually be any parameter */}
-        </Switch>
+        <Routes>
+          <Route path="/"          element={<Home />}      />
+          <Route path="/solutions" element={<Solutions />} />
+          <Route path="/about"     element={<About />}     />
+          <Route path="/contact"   element={<Contact />}   />
+          <Route path="/blog"      element={<Blog />}      />
+        </Routes>
         <Footer />
       </div>
-
-      <div>
-
-        {/* footer??? */}
-
-      </div>
-      
     </Router>
   );
-}
+};
 
 export default App;

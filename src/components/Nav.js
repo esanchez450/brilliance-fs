@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../css/nav.css';
 import { Link, useLocation } from 'react-router-dom';
-import MenuIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 const navLinks = [
   { to: '/solutions', label: 'Solutions' },

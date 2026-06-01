@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import '../css/contact.css';
-import PhoneIcon from '@material-ui/icons/Phone';
-import EmailIcon from '@material-ui/icons/Email';
-import AccessTimeIcon from '@material-ui/icons/AccessTime';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const serviceOptions = [
   'Floor Services',
