@@ -1,166 +1,76 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/nav.css';
-import {Link} from 'react-router-dom'
-import logo from '../logo.svg';
+import { Link, useLocation } from 'react-router-dom';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Button, Menu, MenuItem, Popover } from '@material-ui/core';
+import CloseIcon from '@material-ui/icons/Close';
 
-let intViewportWidth = window.innerWidth;
+const navLinks = [
+  { to: '/solutions', label: 'Solutions' },
+  { to: '/about',     label: 'About'     },
+  { to: '/blog',      label: 'Blog'      },
+];
 
 const Nav = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const closeMenu = () => setMenuOpen(false);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [menuOpen]);
+
+  useEffect(() => {
+    closeMenu();
+  }, [location]);
+
   return (
-    <div className="header">
-        <nav className="header-nav">
+    <header className="header">
+      <nav className="header-nav">
+        <Link className="nav-brand" to="/">
+          Brilliance<span className="brand-accent">FS</span>
+        </Link>
 
+        <ul className="nav-links">
+          {navLinks.map(({ to, label }) => (
+            <li key={to}>
+              <Link
+                className={`nav-link${location.pathname === to ? ' active' : ''}`}
+                to={to}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <Link className="nav-cta" to="/contact">Get a Quote</Link>
+          </li>
+        </ul>
 
-            <Link className='logoLinkStyle' to='/'>
-                <img src={logo} className="App-logo" alt="Brilliance" />
-            </Link>
+        <button
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+        >
+          {menuOpen ? <CloseIcon /> : <MenuIcon />}
+        </button>
+      </nav>
 
-
-
-            <ul className='nav-links'>
-                <Link className='linkStyle' to='/solutions'>
-                    <li> Solutions </li>
-                </Link>
-
-                <Link className='linkStyle' to='/about'>
-                    <li> About </li>
-                </Link>
-
-                <Link className='linkStyle' to='/contact'>
-                    <li> Contact </li>
-                </Link>
-
-                <Link className='linkStyle' to='/blog'>
-                    <li> Blog </li>
-                </Link>
-
-                <Link className='linkStyle' >
-                    {
-                    /** 
-                     * Need menu to render for mobile nav
-                     * on conditional rendering
-                     */ 
-                    }
-                    <MobileMenu />
-                </Link>
-                
-            </ul>
-        </nav>
-    </div>
+      <div className={`mobile-menu${menuOpen ? ' open' : ''}`} aria-hidden={!menuOpen}>
+        <ul>
+          {navLinks.map(({ to, label }) => (
+            <li key={to}>
+              <Link to={to}>{label}</Link>
+            </li>
+          ))}
+          <li>
+            <Link to="/contact" className="mobile-cta">Get a Quote</Link>
+          </li>
+        </ul>
+      </div>
+    </header>
   );
-}
-
-/**
- * Returns nav bar for mobile screen
- */
-const MobileNav = () => {
-    return (
-        <div className="header">
-            <nav className="header-nav">
-                <Link className='logoLinkStyle' to='/'>
-                    <img src={logo} className="App-logo" alt="Brilliance" />
-                </Link>
-    
-                <ul className='nav-links'>
-                    <Link className='linkStyle' >
-                        {
-                        /** 
-                         * Need menu to render for mobile nav
-                         * on conditional rendering
-                         */
-                        }
-                        <MobileMenu />
-                    </Link>
-                </ul>
-            </nav>
-        </div>
-    );
-}
-
-
-// const useStyles = makeStyles((theme) => ({
-    //     typography: {
-        //       padding: theme.spacing(2),
-        //     },
-        //   }));
-        
-        
-const MobileMenu = () => {
-    const [anchorEl, setAnchorEl] = useState(null);
-    
-    const handleClick = (e) => {
-        setAnchorEl(e.currentTarget);
-    };
-    
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
-
-    // const classes = useStyles();
-    const open = Boolean(anchorEl);
-    const id = open ? 'simple-popover' : undefined;
-    
-    return (
-        <div>
-            <Button 
-                aria-controls="simple-menu" 
-                aria-haspopup="true" 
-                fontSize="large" 
-                onClick={handleClick}
-            >
-                <MenuIcon className='drop-menu'/>
-            </Button>
-
-            <Popover
-                id={id}
-                open={open}
-                anchorEl={anchorEl}
-                onClose={handleClose}
-                anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'center',
-                }}
-                transformOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'center',
-                }}
-            >
-                <Menu
-                id="simple-menu"
-                anchorEl={anchorEl}
-                keepMounted
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-                >
-                    <MenuItem onClick={handleClose}>
-                        <Link className='MenuLinkStyle' to='/solutions'>
-                            <li> Solutions </li>
-                        </Link>
-                    </MenuItem>
-
-                    <MenuItem onClick={handleClose}>
-                            <Link className='MenuLinkStyle' to='/about'>
-                                <li> About </li>
-                            </Link>
-                    </MenuItem>
-
-                    <MenuItem onClick={handleClose}>
-                        <Link className='MenuLinkStyle' to='/contact'>
-                            <li> Contact </li>
-                        </Link>
-                    </MenuItem>
-
-                    <MenuItem onClick={handleClose}>
-                        <Link className='MenuLinkStyle' to='/blog'>
-                            <li> Blog </li>
-                        </Link>
-                    </MenuItem>
-                </Menu>
-            </Popover>
-        </div>
-    );
-}
+};
 
 export default Nav;

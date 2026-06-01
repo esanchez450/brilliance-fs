@@ -1,46 +1,87 @@
-.solutions {
-    min-width: 70vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    /* margin-bottom: 0px; */
-    width: 70em;
-    height: 100%;
-    /* height: 100vh; */
+.solutions-page {
+  width: 100%;
 }
 
-.solutions-title {
-    padding-top: 2em; 
-    text-align: center; 
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-.solutions-container {
-    /* box-shadow: 2px 4px 10px black; */
-    
-    width: 100%;
-    height: 100%;
-    /* margin-top: 3em; */
-    /* margin-bottom: 3em; */
-    /* padding: 2em; */ 
-    /* text-align: left; */
+.service-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
 }
 
-.solutions-container-1 {
-    box-shadow: 2px 4px 10px black;
-    width: 100%;
-    height: 500px;
-    margin-top: 3em;
-    padding: 2em;
-    text-align: left;
+.service-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+  border-color: var(--primary-light);
 }
 
-.solutions-container-2 {
-    box-shadow: 2px 4px 10px black;
-    width: 100%;
-    height: 500px;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding: 2em;
-    text-align: left;
+.service-icon {
+  width: 52px;
+  height: 52px;
+  background-color: rgba(49, 113, 134, 0.1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  margin-bottom: 1.25rem;
 }
-  
+
+.service-icon svg {
+  font-size: 1.5rem !important;
+}
+
+.service-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.6rem;
+}
+
+.service-desc {
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.service-features {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-medium);
+}
+
+.feature-check {
+  color: var(--primary) !important;
+  font-size: 0.95rem !important;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
